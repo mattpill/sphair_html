@@ -12,7 +12,11 @@ body {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
+<<<<<<< 29adcd2a08b86f6ce63d88187204a2a494c9e009
 	background: url('../img/ajax-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+=======
+	background: url('../img/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+>>>>>>> First pages commit
 }
 .bottom_nav_line {
 	margin-bottom: 0 !important;
@@ -41,7 +45,11 @@ body {
 }
 .fancy span:before {
   right: 100%;
+<<<<<<< 29adcd2a08b86f6ce63d88187204a2a494c9e009
   margin-right: 25px;
+=======
+  margin-right: 15px;
+>>>>>>> First pages commit
 }
 .fancy span:after {
   left: 100%;
