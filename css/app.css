@@ -1,0 +1,354 @@
+/*********************************************************
+GENERAL
+*********************************************************/
+body {
+	background-color: #dcdcdc;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('../img/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+.bottom_nav_line {
+	margin-bottom: 0 !important;
+}
+.subtitle {
+  margin: 2em 0;
+}
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+  letter-spacing: 10px;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #000;
+  /*border-top: 1px solid white;*/
+  top: 0;
+  width: 150px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+ul {
+	margin: 0;
+}
+
+/*********************************************************
+HEADER
+*********************************************************/
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50%;
+}
+
+nav {
+	background-color: #fff;
+	text-align: center;
+	/*padding: 10px 0;*/
+}
+
+nav ul {
+	margin: 0;
+}
+
+.nav-collapse li {
+	display: inline;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 40px 0;
+}
+
+.nav-collapse a {
+	color: #a9a9a9;
+	margin: 100px 0;
+	padding: 10px 5px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+ 	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+ 	transition:.5s;
+}
+
+.nav-collapse a:hover {
+	background-color: #a9a9a9;
+	color: #fff;
+}
+
+#social_buttons {
+    position: relative;
+}
+
+.social_icon {
+	position: absolute;
+    top: 10px;
+    right: 0px;
+	max-height: 25px;
+}
+
+.facebook {
+	right: 7%;
+}
+
+.twitter {
+	right: 4%;
+}
+
+.instagram {
+	right: 1%;
+}
+
+.social_icon:hover {
+  margin: -1px 0 1px;
+  -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25); }
+
+
+
+
+/*********************************************************
+FOOTER
+*********************************************************/
+
+.footer {
+	margin-top: 20px;
+	padding: 20px 0;
+	background-color: #585858;
+	color: #f1f1f1;
+}
+
+.footer_col {
+	text-align: center;
+}
+
+.footerTable {
+	
+}
+
+.footerTable {
+background-color:none;
+border:none;
+border-collapse:collapse;
+font-weight:bold;
+position:relative;
+max-width:100%;
+margin: 0 auto;
+}
+ 
+tbody {
+	background-color: transparent;
+}
+
+tbody th, tbody td {
+    padding: 0.3rem 0.625rem;
+}
+
+.footer_contact a {
+	color: #f1f1f1;
+}
+
+
+
+/*********************************************************
+HOME
+*********************************************************/
+
+.about_and_maps {
+	margin: 25px 80px;
+}
+
+#map {
+	margin-top: 30px;
+    width: 100%;
+    height: 400px;
+    background-color: #CCC;
+}
+
+.gallery_home img {
+	max-height: 180px;
+	max-width: 250px;
+}
+
+
+/*********************************************************
+TEAM
+*********************************************************/
+
+.team_profiles {
+	margin: 0 80px;
+}
+
+.team_pic img {
+	margin-top: 10px;
+}
+
+
+
+/*********************************************************
+PRICELIST
+*********************************************************/
+
+.pricelist_main {
+	margin: 0 80px;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+
+
+/*********************************************************
+CONTACT
+*********************************************************/
+
+.contact_form {
+	width: 100%;
+	margin: 10px auto;
+}
+
+#frmFormMailContainer {
+	width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text_box {
+	min-width: 100%;
+    max-width: 100%;
+}
+
+/*********************************************************
+TESTIMONIALS
+*********************************************************/
+
+.testimonial_copy P {
+	font-style: italic;
+}
+
+
+
+/*********************************************************
+PRODUCTS
+*********************************************************/
+
+.products_header {
+	text-align: center;
+}
+
+.products_header img {
+	max-width: 50%;
+	height: auto;
+}
+
+
+
+/*********************************************************
+RESPONSIVE STYLES
+*********************************************************/
+
+@media screen and (max-width: 50em) {
+	.logo {
+		margin-top: 5%;
+	}
+
+	.social_buttons {
+		display: none !important;
+	}
+
+	.nav-collapse li {
+		width: 100%;
+		*width: 24.9%; /* IE7 Hack */
+		_width: 19%; /* IE6 Hack */
+	}
+
+	.nav-collapse a {
+		text-decoration: none;
+		width: 100%;
+		padding: 0;
+		float: left;
+		margin: 5px 0;
+		padding:  10px 0.2;
+		text-align: center;
+	}
+
+	.nav-collapse a:hover {
+		padding:  100px 0.2;
+	}
+
+	.nav-toggle {
+	  position: fixed;
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+	  -webkit-touch-callout: none;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	  text-decoration: none;
+	  text-indent: -999px;
+	  position: relative;
+	  overflow: hidden;
+	  width: 100px;
+	  height: 35px;
+	  float: right;
+	}
+
+	.nav-toggle:before {
+	  color: #fff; /* Edit this to change the icon color */
+	  /*font-family: "responsivenav", sans-serif;*/
+	  font-style: normal;
+	  font-weight: normal;
+	  font-variant: normal;
+	  font-size: 40px;
+	  text-transform: none;
+	  position: absolute;
+	  content: "≡";
+	  text-indent: 0;
+	  text-align: center;
+	  line-height: 55px;
+	  speak: none;
+	  width: 100%;
+	  top: -17px;
+	  left: 0;
+	}
+
+	.nav-toggle.active::before {
+		color: #a9a9a9;
+	 	font-size: 24px;
+	  	content:"x";
+	  	height: 20px;
+	}
+
+	.nav-collapse.closed {
+		width: 100%;
+	}
+
+	.nav-collapse.opened {
+		width: 100%;
+	}
+
+	.team_profiles {
+	    margin: 0 20px;
+	}
+
+}
