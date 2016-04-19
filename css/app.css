@@ -41,7 +41,7 @@ body {
 }
 .fancy span:before {
   right: 100%;
-  margin-right: 15px;
+  margin-right: 25px;
 }
 .fancy span:after {
   left: 100%;
@@ -186,10 +186,19 @@ HOME
 }
 
 .gallery_home img {
-	max-height: 180px;
-	max-width: 250px;
+	height: 180px;
+	width: 250px;
 }
 
+.smoothslides-on {
+	width: 100% !important;
+	margin-bottom: 60px;
+}
+
+.ss-slide img {
+	max-height: 500px;
+	width: 100%;
+}
 
 /*********************************************************
 TEAM
