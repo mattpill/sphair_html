@@ -196,7 +196,7 @@
          */
         this.options = {
           animate: true,                    // Boolean: Use CSS3 transitions, true or false
-          transition: 284,                  // Integer: Speed of the transition, in milliseconds
+          transition: 884,                  // Integer: Speed of the transition, in milliseconds
           label: "Menu",                    // String: Label for the navigation toggle
           insert: "before",                 // String: Insert the toggle before or after the navigation
           customToggle: "",                 // Selector: Specify the ID of a custom toggle
