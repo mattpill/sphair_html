@@ -270,6 +270,17 @@ PRODUCTS
 	height: auto;
 }
 
+.product_logos {
+	text-align: center;
+	margin: 20px auto;
+}
+
+.product_logos img {
+	
+	max-width: 50%;
+	height: auto;
+	margin: 20px auto;
+}
 
 
 /*********************************************************
