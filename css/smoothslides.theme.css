@@ -82,6 +82,7 @@
 .ss-slide img{
 	height:auto;
 	/* max-width, or width gets set via JS */
+	max-width: 100%;
 }
 /* Caption wrapper. Used for centering */
 .ss-caption-wrap {
