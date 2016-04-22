@@ -12,7 +12,7 @@ body {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url('../img/ajax-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+	background: url('../img/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
 }
 .bottom_nav_line {
 	margin-bottom: 0 !important;
@@ -175,6 +175,7 @@ HOME
 *********************************************************/
 
 .about_and_maps {
+
 	margin: 25px 30px;
 }
 
