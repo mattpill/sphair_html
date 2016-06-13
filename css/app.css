@@ -2,7 +2,7 @@
 GENERAL
 *********************************************************/
 body {
-	background-color: #dcdcdc;
+	background-color: #171916;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .loader {
@@ -28,13 +28,14 @@ body {
   display: inline-block;
   position: relative;
   letter-spacing: 10px;  
+  color: #73806e;
 }
 .fancy span:before,
 .fancy span:after {
   content: "";
   position: absolute;
   height: 5px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #73806e;
   /*border-top: 1px solid white;*/
   top: 0;
   width: 150px;
@@ -52,6 +53,14 @@ ul {
 	margin: 0;
 }
 
+h2, h3 {
+	color: #73806e;
+}
+
+p {
+	color: #B7B4A1;
+}
+
 /*********************************************************
 HEADER
 *********************************************************/
@@ -63,9 +72,9 @@ HEADER
 }
 
 nav {
-	background-color: #fff;
+	background-color: #73806e;
 	text-align: center;
-	/*padding: 10px 0;*/
+	padding: 10px 0;
 }
 
 nav ul {
@@ -80,7 +89,7 @@ nav ul {
 }
 
 .nav-collapse a {
-	color: #a9a9a9;
+	color: #B7B4A1;
 	margin: 100px 0;
 	padding: 10px 5px;
 	-o-transition:.5s;
@@ -134,8 +143,8 @@ FOOTER
 .footer {
 	margin-top: 20px;
 	padding: 20px 0;
-	background-color: #585858;
-	color: #f1f1f1;
+	background-color: #73806e;
+	color: #B7B4A1;
 }
 
 .footer_col {
@@ -295,6 +304,10 @@ RESPONSIVE STYLES
 
 	.social_buttons {
 		display: none !important;
+	}
+
+	nav {
+		padding: 0;
 	}
 
 	.nav-collapse li {

@@ -1834,7 +1834,7 @@ hr {
   height: 0;
   border-right: 0;
   border-top: 0;
-  border-bottom: 1px solid #cacaca;
+  border-bottom: 1px solid #73806e;
   border-left: 0;
   margin: 1.25rem auto;
   clear: both; }
@@ -3493,7 +3493,7 @@ table {
   thead,
   tbody,
   tfoot {
-    border: 1px solid #f1f1f1;
+    border: 1px solid #B7B4A1;
     background-color: #fefefe; }
   caption {
     font-weight: bold;

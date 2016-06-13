@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $pageTitle; ?></title>
+    <title>SP Hair | Home</title>
     <link rel="shortcut icon" href="favicon.ico">
     <!-- <script src="//code.jquery.com/jquery-1.12.0.min.js"></script> -->
     <link rel="stylesheet" href="css/foundation.css" />
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/app.css" />
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/responsive-nav.js"></script>
+    <!-- <script src="js/ninja-slider.js" type="text/javascript"></script> -->
     
     <!-- LOADER -->
     <script type="text/javascript">
@@ -50,7 +51,6 @@
                     <li><a href="pricelist.html">Price List</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="products.html">Products</a></li>
                 </ul>
             </nav>
@@ -64,8 +64,8 @@
 
     <div id="content">
 
-    <div class="smoothslides" id="myslideshow1">
-        <img src="img/banner_logo.jpg"/>    
+    <div class="smoothslides" id="homepageBanner">
+        <img src="img/salon_banner.jpg"/>    
         <img src="img/1.jpg"/>   
         <img src="img/2.jpg"/>   
         <img src="img/3.jpg"/>   
@@ -101,7 +101,6 @@
             <div id="ninja-slider-next"></div>
         </div>
     </div>
-<<<<<<< 14806bce24a9851adc9a887a364bf5991061d113
 </div> -->
 
 <hr>
@@ -246,22 +245,20 @@
             name: 'Custom Style'
         });
         var customMapTypeId = 'custom_style';
-
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: myLatLng,
           scrollwheel:  false,
           mapTypeControlOptions: {
+            scrollwheel: false,
             mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
           }
         });
-
         var marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
             title: 'Hello World!'
           });
-
         map.mapTypes.set(customMapTypeId, customMapType);
         map.setMapTypeId(customMapTypeId);
       }
@@ -280,7 +277,7 @@
     <div class="small-12 medium-3 large-3 columns"><a href="gallery"><img src="img/gallery_4.jpg"></a></div>
 </div>
 
-  
+<hr>
 
 </div>
     <div class="footer">
@@ -290,6 +287,7 @@
             <h4>ADDRESS</h4>
             <p>80 High St,<br>Nailsea,<br>Bristol<br>BS48 1AS</p>
         </div>
+
         <div class="small-12 large-4 columns footer_col">
 
             <h4>OPENING TIMES</h4>
@@ -355,12 +353,11 @@
     <script type="text/javascript">
         /* wait for images to load */
         $(window).load( function() {
-
-            $('#myslideshow1').smoothSlides({
-            effectDuration: 3500
+            $('#homepageBanner').smoothSlides({
+            effectDuration: 3500,
+            effect: 'zoomin'
             /* options seperated by commas */
             });
-
             $('xmp').click(function(){
                 var saveContent = $(this).html();
                 $("body").append("<input type='text' id='temp' style=''>");
@@ -375,9 +372,9 @@
                     });
                 }, 1000)
             });
-
         });
     </script>
     <!-- /for homebanner -->
+
 </body>
 </html>
